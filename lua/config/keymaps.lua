@@ -49,8 +49,6 @@ vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "LSP code ac
 vim.keymap.set("n", "<leader>cd", function() vim.cmd([[Trouble]]) end, { desc = "Diagnostics using Trouble" })
 vim.keymap.set("n", "<leader>la", function() vim.cmd([[InspectTree]]) end, { desc = "open an ast (abstract syntax tere)" })
 
-vim.keymap.set("n", "e", function() vim.cmd([[Oil]]) end, { desc = "Open parent directory" })
-
 vim.keymap.set("n", ",", "<C-w>2>")
 vim.keymap.set("n", ".", "<C-w>2<")
 vim.keymap.set("n", "<C-,>", "<C-w>2-")
