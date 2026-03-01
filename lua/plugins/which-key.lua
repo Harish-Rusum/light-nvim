@@ -15,15 +15,55 @@ return {
             align = "left",
         },
 
-        -- disable icons
         icons = {
             mappings = false,
-            breadcrumb = "",   -- remove breadcrumb symbol
-            separator = "",    -- remove separator symbol
-            group = "",        -- remove group + symbol
+            breadcrumb = "",
+            separator = "",
+            group = "",
         },
 
         show_help = true,
         show_keys = true,
     },
+    config = function(_, opts)
+        local wk = require("which-key")
+        wk.setup(opts)
+
+        wk.register({
+            m  = { name = "-> Split (Treesj)" },
+            d  = { name = "-> Fancy Delete" },
+            b  = { name = "-> Buffer Stuff" },
+            bc = { name = "-> Buffer close" },
+            bn = { name = "-> Buffer next" },
+            bp = { name = "-> Buffer prev" },
+            bt = { name = "-> Buffer idfk" },
+            c  = { name = "-> Code" },
+            ca = { name = "-> Lsp Code Actions" },
+            cd = { name = "-> Diagnostics" },
+            cf = { name = "-> Format" },
+            cg = { name = "-> Goto File" },
+            cr = { name = "-> Rename" },
+            f  = { name = "-> Find" },
+            ff = { name = "-> Find Files" },
+            fg = { name = "-> Find Grep" },
+            fi = { name = "-> Find Icons" },
+            fm = { name = "-> Find Manpages" },
+            fs = { name = "-> Find Colorschemes" },
+            fb = { name = "-> Buffer picker" },
+            g  = { name = "-> Git" },
+            gS = { name = "-> Git Stash" },
+            gb = { name = "-> Git Branches" },
+            gd = { name = "-> Git diff" },
+            gf = { name = "-> Git Logfile" },
+            gl = { name = "-> Git Log" },
+            gs = { name = "-> Git Status" },
+            l  = { name = "-> Lsp" },
+            la = { name = "-> Abstract Syntax Tree" },
+            s  = { name = "-> Split" },
+            e  = { name = "-> File Explorer" },
+            q  = { name = "-> Quit file" },
+            w  = { name = "-> Save file" },
+            T  = { name = "-> Terminal Background" },
+        }, { prefix = "<leader>" })
+    end,
 }

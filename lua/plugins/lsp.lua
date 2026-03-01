@@ -57,7 +57,6 @@ return {
                     capabilities = capabilities,
                 }
 
-                -- 🔹 Special config for lua_ls
                 if server == "lua_ls" then
                     opts.settings = {
                         Lua = {
