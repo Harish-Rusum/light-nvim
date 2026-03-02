@@ -33,6 +33,7 @@ vim.keymap.set( "n", "<leader>gS", function() vim.cmd[[lua Snacks.picker.git_sta
 vim.keymap.set( "n", '<leader>f"', function() vim.cmd[[lua Snacks.picker.registers()]] end, {desc = "Registers"} )
 
 vim.keymap.set("n", "<leader>ff", function() vim.cmd[[lua Snacks.picker.files()]] end, { desc = "Fuzzy find files" })
+vim.keymap.set("n", "<leader>fc", function() vim.cmd[[lua Snacks.picker.colorschemes()]] end, { desc = "Fuzzy find colorschemes" })
 vim.keymap.set("n", "<leader>fs", function() vim.cmd[[lua Snacks.picker.colorschemes()]] end, { desc = "Color scheme picker" })
 vim.keymap.set("n", "<C-p>", function() vim.cmd([[lua Snacks.picker.files()]]) end, { desc = "Find files" })
 vim.keymap.set("n", "<leader>fg", function() vim.cmd([[lua Snacks.picker.grep()]]) end, { desc = "Live grep (search for word)" })
@@ -107,6 +108,7 @@ function ToggleTransparency()
     vim.api.nvim_set_hl(0, "NoiceCmdlinePopupTitle", { fg = "#FCFFC1" })
 end
 
+vim.keymap.set("n", "<leader>rc", function() vim.cmd([[RunCpp]]) end, { desc = "Compile and run C++" })
 vim.api.nvim_set_keymap("n", "<leader>T", ":lua ToggleTransparency()<CR>", { noremap = true, silent = true, desc = "Toggle transparent background" })
 
 vim.keymap.set("n", "<leader><leader>p", function()

@@ -45,6 +45,7 @@ return {
             cr = { name = "-> Rename" },
             f  = { name = "-> Find" },
             ff = { name = "-> Find Files" },
+            fc = { name = "-> Colorschemes" },
             fg = { name = "-> Find Grep" },
             fi = { name = "-> Find Icons" },
             fm = { name = "-> Find Manpages" },

@@ -25,6 +25,7 @@ opt.termguicolors = true
 opt.signcolumn = "yes"
 opt.updatetime = 250
 opt.hlsearch = false
+opt.fillchars = "eob: "
 vim.cmd("colorscheme tokyonight-night")
 
 vim.cmd([[
